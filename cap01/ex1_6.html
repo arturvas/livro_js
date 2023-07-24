@@ -1,7 +1,8 @@
 <meta charset="utf-8" />
 <script>
-  const num1 = Number(prompt("1º número: ")); // le os numeros
-  const num2 = Number(prompt("2º número: "));
-  const soma = num1 + num2; // calcula a soma
-  alert(`Soma é: ${soma}`); //exibe o resultado
+  let valorJantar = Number(prompt("Valor do jantar: R$ "));
+  const taxaGarcon = Number(prompt("Taxa do garçom: % "));
+  valorJantar = valorJantar * (taxaGarcon / 100) + valorJantar;
+
+  alert(`Total a pagar com taxa é: ${valorJantar}`);
 </script>
